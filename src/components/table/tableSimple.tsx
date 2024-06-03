@@ -1,14 +1,16 @@
 import React from 'react'
 import { Table, TableBody, TableCell, TableHead, TableRow, Button } from '@mui/material'
 import EditIcon from '@mui/icons-material/Edit'
+import DeleteIcon from '@mui/icons-material/Delete'
 import { productType } from '../../types/Products'
 
 interface TableComponentProps {
   products: productType[]
   onEdit: (productId: string) => void
+  onDelete: (productId: string) => void
 }
 
-export const TableComponent: React.FC<TableComponentProps> = ({ products, onEdit }) => {
+export const TableComponent: React.FC<TableComponentProps> = ({ products, onEdit, onDelete }) => {
   return (
     <Table>
       <TableHead>
@@ -26,7 +28,8 @@ export const TableComponent: React.FC<TableComponentProps> = ({ products, onEdit
             <TableCell>{product.description}</TableCell>
             <TableCell>{product.price}</TableCell>
             <TableCell>
-              <Button onClick={() => onEdit(product.id.toString())}>Editar <EditIcon /></Button>
+              <Button onClick={() => onEdit(product.id.toString())} variant="contained" color="warning">Editar <EditIcon /></Button>
+              <Button onClick={() => onDelete(product.id)} variant="contained" color="error">Eliminar <DeleteIcon /></Button>
             </TableCell>
           </TableRow>
         ))}

@@ -4,6 +4,8 @@ import React, { PropsWithChildren } from 'react'
 import { AppBar, Button, Container, Toolbar, Typography } from '@mui/material'
 import { eliminarCookie } from '../../utils/cookies'
 import { useRouter } from 'next/navigation'
+import { ToastContainer } from 'react-toastify';
+import '../../styles/globals.css'
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   const router = useRouter()
@@ -30,6 +32,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
         </Toolbar>
       </AppBar>
       <Container sx={{ p: 2 }}>{children}</Container>
+      <ToastContainer />
     </>
   )
 }

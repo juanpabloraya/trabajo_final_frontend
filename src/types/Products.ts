@@ -10,3 +10,6 @@ export interface productSave {
   description: string;
   price: number | string;
 }
+export interface productId {
+  id: string
+}

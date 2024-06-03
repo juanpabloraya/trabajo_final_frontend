@@ -6,8 +6,8 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "no-console": "warn",
-    "no-unused-vars": "off",
+    "no-console": "off", // Deshabilitar regla no-console
+    "no-unused-vars": "off", // Deshabilitar regla no-unused-vars
     "@typescript-eslint/no-unused-vars": "warn",
     "require-await": [
       "warn"
