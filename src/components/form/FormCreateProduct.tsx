@@ -115,6 +115,7 @@ export const ProductFormModal: React.FC<ProductFormModalProps> = ({ open, onClos
             onChange={(e) => setName(e.target.value)}
             fullWidth
             margin="normal"
+            data-testid="productName"
           />
           <TextField
             label="Descripción"
@@ -122,6 +123,7 @@ export const ProductFormModal: React.FC<ProductFormModalProps> = ({ open, onClos
             onChange={(e) => setDescription(e.target.value)}
             fullWidth
             margin="normal"
+            data-testid="productDescription"
           />
           <TextField
             label="Precio"
@@ -130,6 +132,7 @@ export const ProductFormModal: React.FC<ProductFormModalProps> = ({ open, onClos
             fullWidth
             margin="normal"
             type="number"
+            data-testid="productPrice"
           />
         </Box>
       </DialogContent>

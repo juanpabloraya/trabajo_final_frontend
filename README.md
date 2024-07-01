@@ -144,6 +144,12 @@ npm run dev
 yarn dev
 ```
 
+### Ejecución de pruebas Cypress
+
+```bash
+npx cypress open
+```
+
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
 ### Configuración de Imágenes

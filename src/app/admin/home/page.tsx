@@ -111,7 +111,7 @@ const AdminHomePage = () => {
             Bienvenido, user1@example.com. Aquí puedes gestionar la aplicación.
           </Typography>
           <Box mt={2}>
-            <Button onClick={() => handleOpenModal(undefined)} variant="contained" color="primary">
+            <Button onClick={() => handleOpenModal(undefined)} variant="contained" color="primary" data-testid="nuevoProducto">
               Nuevo Producto <AddIcon/>
             </Button>
           </Box>

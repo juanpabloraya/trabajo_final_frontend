@@ -79,14 +79,14 @@ export const ConfirmDeleteModal: React.FC<ConfirmDeleteModalProps> = ({ open, on
 
 
   return (
-    <Dialog open={open} onClose={onClose}>
+    <Dialog open={open} onClose={onClose} data-testid="deleteModal">
       <DialogTitle>Eliminar Producto</DialogTitle>
       <DialogContent>
         <Box>
           <Typography variant="h6">Nombre:</Typography>
-          <Typography>{name}</Typography>
+          <Typography data-testid="nombre">{name}</Typography>
           <Typography variant="h6">Descripción:</Typography>
-          <Typography>{description}</Typography>
+          <Typography data-testid="descripcion">{description}</Typography>
           <br />
           <Typography variant="h5">Desea borrar el registro, no se podra recuperar!</Typography>
         </Box>
@@ -95,7 +95,7 @@ export const ConfirmDeleteModal: React.FC<ConfirmDeleteModalProps> = ({ open, on
         <Button onClick={onClose} color="primary">
           Cancelar
         </Button>
-        <Button onClick={handleDelete} color="primary">
+        <Button onClick={handleDelete} color="primary" data-testid="deleteButton">
           Eliminar
         </Button>
       </DialogActions>

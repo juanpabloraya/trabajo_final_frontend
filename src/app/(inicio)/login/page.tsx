@@ -123,6 +123,7 @@ const LoginContainer = () => {
               <Box sx={{ height: 15 }}></Box>
               <Button
                 type="submit"
+                data-testid="acceder"
                 variant="contained"
                 fullWidth
                 disabled={loading}
