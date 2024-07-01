@@ -106,8 +106,7 @@ Una aplicación de noticias de tecnología construida con Next.js, TypeScript y 
 
 ### Requisitos
 
-- Node.js
-- npm o yarn
+- Node.js con npm
 
 ### Instalación
 
@@ -120,15 +119,14 @@ Una aplicación de noticias de tecnología construida con Next.js, TypeScript y 
 2. Instala las dependencias:
 
    ```bash
-   cd news-mui-nextjs
+   cd <Proyecto>
    npm install
-   # o
-   yarn install
    ```
 
 3. Crea un archivo `.env.local` en la raíz del proyecto y añade la siguiente variable:
 
    ```bash
+   ## Copia el archivo de varaibles de entorno
    $ cp .env.example .env
    ```
    
@@ -140,13 +138,12 @@ Una aplicación de noticias de tecnología construida con Next.js, TypeScript y 
 
 ```bash
 npm run dev
-# o
-yarn dev
 ```
 
-### Ejecución de pruebas Cypress
+### Ejecución de pruebas test con Cypress
 
 ```bash
+## Ejecuta
 npx cypress open
 ```
 
