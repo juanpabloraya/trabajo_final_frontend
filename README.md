@@ -1,8 +1,8 @@
 # Demo - Aplicación de Noticias
 
-Una aplicación de noticias de tecnología construida con Next.js, TypeScript y Material-UI, utilizando el App Router para la renderización del lado del servidor (SSR) y la revalidación de páginas desde el backend.
+Una aplicación desarrollada en el modulo 4, sobre noticias de tecnología construida con Next.js, TypeScript y Material-UI, utilizando el App Router para la renderización del lado del servidor (SSR) y la revalidación de páginas desde el backend.
 
-## Características
+## Características del proyecto
 
 - Renderización del lado del servidor (SSR) para una carga rápida y SEO optimizado.
 - Actualización periódica de noticias en el cliente.
