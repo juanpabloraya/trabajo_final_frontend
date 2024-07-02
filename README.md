@@ -1,8 +1,8 @@
-# Demo - Aplicación de Noticias
+# Aplicación de Noticias
 
 Una aplicación desarrollada en el modulo 4, sobre noticias de tecnología construida con Next.js, TypeScript y Material-UI, utilizando el App Router para la renderización del lado del servidor (SSR) y la revalidación de páginas desde el backend.
 
-## Características del proyecto
+## Características
 
 - Renderización del lado del servidor (SSR) para una carga rápida y SEO optimizado.
 - Actualización periódica de noticias en el cliente.
@@ -10,7 +10,7 @@ Una aplicación desarrollada en el modulo 4, sobre noticias de tecnología const
 - Uso de Material-UI para una interfaz de usuario moderna y responsiva.
 - Uso de imágenes optimizadas con `next/image`.
 
-## Estructura del Proyecto
+## Estructura
 
 ```plaintext
 └── 📁Frontent
@@ -102,7 +102,7 @@ Una aplicación desarrollada en el modulo 4, sobre noticias de tecnología const
     └── tsconfig.json
 ```
 
-## Configuración del Proyecto
+## Configuración
 
 ### Requisitos
 
